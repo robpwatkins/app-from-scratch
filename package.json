@@ -17,8 +17,15 @@
   },
   "homepage": "https://github.com/robpwatkins/app-from-scratch#readme",
   "dependencies": {
-    "nodemon": "^2.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.1"
   }
 }
