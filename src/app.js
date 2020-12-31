@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import Form from './components/Form';
+import Todos from './components/Todos';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+
+  console.log(todos);
   return (
     <div>
-      <h1>Hello, world!</h1>
-      <h3>From src/app.js</h3>
+      <Form setTodos={setTodos} todos={todos} />
+      <Todos setTodos={setTodos} todos={todos} />
     </div>
   )
 }
